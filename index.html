@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farel Digital Solution</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(15,23,42,0.9);
+    backdrop-filter:blur(10px);
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(
+        rgba(15,23,42,.8),
+        rgba(15,23,42,.9)
+    );
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero-content span{
+    color:#38bdf8;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:25px;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+section{
+    padding:100px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h2{
+    font-size:40px;
+    color:#38bdf8;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.testi{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">FDS</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#service">Layanan</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Bangun Bisnismu Bersama <span>Farel Digital Solution</span></h1>
+
+        <p>
+            Jasa pembuatan website, landing page, dan branding digital
+            untuk UMKM, toko online, komunitas, dan bisnis modern.
+        </p>
+
+        <a href="#contact" class="btn">
+            Hubungi Kami
+        </a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="title">
+        <h2>Tentang Kami</h2>
+    </div>
+
+    <div class="about">
+        <p>
+            Farel Digital Solution membantu bisnis berkembang
+            melalui website profesional, desain modern,
+            dan strategi digital yang efektif.
+        </p>
+    </div>
+</section>
+
+<section id="service">
+    <div class="title">
+        <h2>Layanan Kami</h2>
+    </div>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Landing Page</h3>
+            <p>
+                Website promosi satu halaman untuk meningkatkan penjualan.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Website Company Profile</h3>
+            <p>
+                Website profesional untuk perusahaan dan UMKM.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Desain UI/UX</h3>
+            <p>
+                Tampilan modern, responsif, dan mudah digunakan.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="title">
+        <h2>Testimoni</h2>
+    </div>
+
+    <div class="testimonials">
+
+        <div class="testi">
+            ⭐⭐⭐⭐⭐
+            <p>
+                Website sangat keren dan cepat selesai.
+            </p>
+            <br>
+            <b>- Andi</b>
+        </div>
+
+        <div class="testi">
+            ⭐⭐⭐⭐⭐
+            <p>
+                Penjualan meningkat setelah memakai landing page.
+            </p>
+            <br>
+            <b>- Budi</b>
+        </div>
+
+        <div class="testi">
+            ⭐⭐⭐⭐⭐
+            <p>
+                Desain modern dan responsif di semua perangkat.
+            </p>
+            <br>
+            <b>- Siti</b>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <div class="title">
+        <h2>Kontak</h2>
+    </div>
+
+    <div class="contact">
+        <p>WhatsApp: 08xxxxxxxxxx</p>
+        <p>Email: farel@email.com</p>
+        <p>Instagram: @farelfirmans</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Farel Digital Solution. All Rights Reserved.
+</footer>
+
+</body>
+                                      </html>
